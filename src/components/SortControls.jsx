@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const SortControls = ({ data, setFilteredData }) => {
-  const [sortBy, setSortBy] = useState(""); // No default sorting
+  const [sortBy, setSortBy] = useState("");
 
   const handleSortChange = (e) => {
     const selectedSort = e.target.value;
@@ -10,18 +10,24 @@ const SortControls = ({ data, setFilteredData }) => {
     let sortedData = [...data];
     if (selectedSort === "revenueLowToHigh") {
       sortedData.sort((a, b) => a.revenue - b.revenue);
+    } else if (selectedSort === "revenueHighToLow") {
+      sortedData.sort((a, b) => b.revenue - a.revenue);
     } else if (selectedSort === "dateEarliestToLatest") {
       sortedData.sort((a, b) => new Date(a.date) - new Date(b.date));
+    } else if (selectedSort === "dateLatestToEarliest") {
+      sortedData.sort((a, b) => new Date(b.date) - new Date(a.date));
     } else if (selectedSort === "netIncomeLowToHigh") {
       sortedData.sort((a, b) => a.netIncome - b.netIncome);
+    } else if (selectedSort === "netIncomeHighToLow") {
+      sortedData.sort((a, b) => b.netIncome - a.netIncome);
     }
 
     setFilteredData(sortedData);
   };
 
   const handleReset = () => {
-    setSortBy(""); // Clear the selected sort option
-    setFilteredData(data); // Reset to original data
+    setSortBy("");
+    setFilteredData(data);
   };
 
   return (
@@ -34,8 +40,11 @@ const SortControls = ({ data, setFilteredData }) => {
       >
         <option value="">Select...</option>
         <option value="revenueLowToHigh">Revenue (Low to High)</option>
+        <option value="revenueHighToLow">Revenue (High to Low)</option>
         <option value="dateEarliestToLatest">Date (Earliest to Latest)</option>
+        <option value="dateLatestToEarliest">Date (Latest to Earliest)</option>
         <option value="netIncomeLowToHigh">Net Income (Low to High)</option>
+        <option value="netIncomeHighToLow">Net Income (High to Low)</option>
       </select>
       <button
         onClick={handleReset}

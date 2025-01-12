@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Financial Data Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based financial data dashboard that fetches data from an API, displays it in an interactive table, and provides filtering and sorting options. The app is also deployed to GitHub Pages for easy access.
 
-## Available Scripts
+## Features
+- Fetch financial data using an external API.
+- Interactive filtering options for date and revenue range.
+- Sorting options for revenue, net income, and date.
+- Reset functionality to clear filters and sorting.
+- Visually appealing interface with responsive design.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+##  Link to the Deployed App
+The app is live at: [Financial Data Dashboard](https://akash7808.github.io/financial-dashboard-vg) -(https://akash7808.github.io/financial-dashboard-vg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instructions to Run the Project Locally
 
-### `npm test`
+Follow these steps to set up and run the project on your local machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+1. **Node.js and npm**:
+   - Download and install Node.js from [https://nodejs.org/](https://nodejs.org/).
+   - Verify installation:
+     ```bash
+     node -v
+     npm -v
+     ```
 
-### `npm run build`
+2. **Git**:
+   - Ensure Git is installed. Download from [https://git-scm.com/](https://git-scm.com/) if necessary.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Clone the Repository
+1. Open a terminal and run:
+   ```bash  
+   git clone https://github.com/akash7808/financial-dashboard-vg.git
+   ```
+   
+2. Navigate to the project folder:
+   ```bash
+   cd financial-dashboard-vg
+   ```
+   
+### Install Dependencies
+  Run the following command to install all required dependencies:
+  ```bash
+    npm install
+  ```
+### Run the Project Locally
+Start the development server:
+  ```bash
+  npm start
+  ```
+The app will be available at http://localhost:3000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##  API Used
+This project fetches data from the **Financial Modeling Prep API**.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**API URL**:  
+[https://financialmodelingprep.com/api/v3/income-statement/AAPL?period=annual&apikey=<your-api-key>](https://financialmodelingprep.com/api/v3/income-statement/AAPL?period=annual&apikey=<your-api-key>)
 
-### `npm run eject`
+## Features
+- Fetch financial data using an external API.
+- Interactive filtering options for date and revenue range.
+- Sorting options for revenue, net income, and date.
+- Reset functionality to clear filters and sorting.
+- Visually appealing interface with responsive design.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contact
+For any questions or feedback, please feel free to reach out:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **GitHub**: [https://github.com/akash7808](https://github.com/akash7808)
+- **Email**: [akashreddykakunuri@gmail.com](mailto:akashreddykakunuri@gmail.com)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  

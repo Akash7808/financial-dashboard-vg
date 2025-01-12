@@ -4,9 +4,8 @@ import SortControls from "./components/SortControls";
 import DataTable from "./components/DataTable";
 import SummaryCards from "./components/SummaryCards";
 
-const API_KEY = "UfDSXPvbASSCs3O4OEKs0oxEXiG7zcSV";
-const API_URL = `https://financialmodelingprep.com/api/v3/income-statement/AAPL?period=annual&apikey=${API_KEY}`;
-
+const API_URL = `https://financialmodelingprep.com/api/v3/income-statement/AAPL?period=annual&apikey=${process.env.REACT_APP_API_KEY}`;
+console.log(API_URL);
 const App = () => {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
